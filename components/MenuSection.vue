@@ -55,7 +55,7 @@ const pizzas = ref([
     name: 'Garden Fresh Veggie',
     description: 'Bell peppers, mushrooms, onions, olives, and tomatoes',
     price: 13.99,
-    image: 'https://images.unsplash.com/photo-1601050697385-4ff1b92d7341?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80',
+    image: 'https://www.mexicangoldenchicken.com/wp-content/uploads/2023/11/mushroom-pizza-1-1024x1024.webp',
     added: false
   },
   {

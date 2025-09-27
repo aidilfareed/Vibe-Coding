@@ -3,7 +3,7 @@
     <div class="container">
       <div class="cause-content">
         <div class="cause-image">
-          <img src="https://images.unsplash.com/photo-1503740725288-04e7b1c79e15?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="Adventure Quest World Club">
+          <img src="https://cdn.prod.website-files.com/619dc793cd0b4873e0825490/61ae20883d652b27b6ef3f39_org-design-second-edition.svg" alt="Adventure Quest World Club">
         </div>
         <div class="cause-text">
           <h2>Adventure Quest World Club</h2>
