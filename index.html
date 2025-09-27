@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lions Club Pizza Charity Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/f/fa/Lions_Clubs_International_logo.svg" alt="Lions Club Logo" class="logo">
+                    <span class="brand-text">Lions Club</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#flavors">Pizza</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hot Pizza for Great Causes</h1>
+            <p class="hero-subtitle">Join Lions Club in making a difference, one slice at a time!</p>
+            <p class="hero-description">Every pizza purchase supports our community outreach programs</p>
+            <div class="hero-buttons">
+                <a href="#donate" class="btn btn-primary">Order Pizza</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="pizza-illustration">🍕</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Our Charity Event</h2>
+                <p>Making a positive impact in our community through delicious pizza</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>Lions Club is dedicated to serving our community and helping those in need. This pizza event helps fund our local outreach programs, vision screenings, and youth development initiatives.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>We serve only the finest quality pizza made with premium ingredients. Every slice is crafted with care and love, ensuring a delightful experience for all ages.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Community Impact</h3>
+                    <p>100% of proceeds go directly to community programs including food drives, educational scholarships, and assistance for families in need. Your purchase makes a real difference!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pizza Menu Section -->
+    <section id="flavors" class="flavors">
+        <div class="container">
+            <div class="section-header">
+                <h2>Delicious Pizza Menu</h2>
+                <p>Choose from our selection of freshly made pizzas</p>
+            </div>
+            <div class="flavors-grid">
+                <div class="flavor-card">
+                    <div class="flavor-image">🍕</div>
+                    <h3>Classic Margherita</h3>
+                    <p>Fresh tomato sauce, mozzarella, and basil</p>
+                    <div class="price">$12.00</div>
+                    <button class="btn btn-small" onclick="addToCart('margherita', 12.00)">Add to Cart</button>
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">🍖</div>
+                    <h3>Pepperoni Supreme</h3>
+                    <p>Classic pepperoni with extra cheese</p>
+                    <div class="price">$14.00</div>
+                    <button class="btn btn-small" onclick="addToCart('pepperoni', 14.00)">Add to Cart</button>
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">🧀</div>
+                    <h3>Four Cheese</h3>
+                    <p>Mozzarella, cheddar, parmesan, and blue cheese</p>
+                    <div class="price">$13.50</div>
+                    <button class="btn btn-small" onclick="addToCart('cheese', 13.50)">Add to Cart</button>
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">🥩</div>
+                    <h3>Meat Lovers</h3>
+                    <p>Pepperoni, sausage, ham, and bacon</p>
+                    <div class="price">$16.50</div>
+                    <button class="btn btn-small" onclick="addToCart('meat', 16.50)">Add to Cart</button>
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">🥬</div>
+                    <h3>Veggie Deluxe</h3>
+                    <p>Bell peppers, mushrooms, olives, and onions</p>
+                    <div class="price">$13.00</div>
+                    <button class="btn btn-small" onclick="addToCart('veggie', 13.00)">Add to Cart</button>
+                </div>
+                <div class="flavor-card">
+                    <div class="flavor-image">🌶️</div>
+                    <h3>Spicy Hawaiian</h3>
+                    <p>Ham, pineapple, jalapeños, and hot sauce</p>
+                    <div class="price">$15.00</div>
+                    <button class="btn btn-small" onclick="addToCart('hawaiian', 15.00)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation/Cart Section -->
+    <section id="donate" class="donate">
+        <div class="container">
+            <div class="section-header">
+                <h2>Your Order & Donation</h2>
+                <p>Every purchase supports our community programs</p>
+            </div>
+            <div class="donate-content">
+                <div class="cart-section">
+                    <h3>Your Cart</h3>
+                    <div id="cart-items" class="cart-items">
+                        <p class="empty-cart">Your cart is empty. Add some delicious pizza!</p>
+                    </div>
+                    <div class="cart-total">
+                        <strong>Total: $<span id="cart-total">0.00</span></strong>
+                    </div>
+                </div>
+                <div class="donation-section">
+                    <h3>Additional Donation</h3>
+                    <p>Want to contribute extra to our cause?</p>
+                    <div class="donation-options">
+                        <button class="donation-btn" onclick="addDonation(5)">+$5</button>
+                        <button class="donation-btn" onclick="addDonation(10)">+$10</button>
+                        <button class="donation-btn" onclick="addDonation(25)">+$25</button>
+                        <input type="number" id="custom-donation" placeholder="Custom amount" min="1" step="0.01">
+                        <button class="btn btn-small" onclick="addCustomDonation()">Add</button>
+                    </div>
+                </div>
+                <div class="checkout-section">
+                    <button class="btn btn-primary btn-large" onclick="checkout()" id="checkout-btn" disabled>
+                        Proceed to Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="event-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>Event Details</h2>
+                <p>Join us for this special community event</p>
+            </div>
+            <div class="event-info">
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <h3>Date & Time</h3>
+                    <p>Saturday, October 14th, 2024<br>10:00 AM - 6:00 PM</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Lions Club Community Center<br>123 Main Street, Downtown</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Special Activities</h3>
+                    <p>Face painting, games for kids,<br>live music, and more!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch for more information</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>(555) 123-4567</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@lionsclub.org</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <span>www.lionsclub.org</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Lions Club</h3>
+                    <p>Serving our community with pride and dedication since 1968.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#flavors">Pizza</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Lions Club. All rights reserved. | Making a difference in our community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
