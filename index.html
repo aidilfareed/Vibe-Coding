@@ -3,49 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lions Club Pizza Charity Event</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Pizza for a Cause | Adventure Quest World Club Charity Event</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/f/fa/Lions_Clubs_International_logo.svg" alt="Lions Club Logo" class="logo">
-                    <span class="brand-text">Lions Club</span>
-                </div>
-                <ul class="nav-menu">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-pizza-slice"></i>
+                <span>Pizza for a Cause</span>
+            </div>
+            <nav class="nav">
+                <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#flavors">Pizza</a></li>
-                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#cause">Our Cause</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <button class="nav-toggle" id="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
-        </nav>
+        </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Hot Pizza for Great Causes</h1>
-            <p class="hero-subtitle">Join Lions Club in making a difference, one slice at a time!</p>
-            <p class="hero-description">Every pizza purchase supports our community outreach programs</p>
-            <div class="hero-buttons">
-                <a href="#donate" class="btn btn-primary">Order Pizza</a>
-                <a href="#about" class="btn btn-secondary">Learn More</a>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Delicious Pizza, <span>Amazing Cause</span></h1>
+                <p>Join us in supporting Adventure Quest World Club while enjoying the best pizza in town! Every slice helps fund educational adventures for children worldwide.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Order Now</a>
+                    <a href="#cause" class="btn btn-secondary">Learn More</a>
+                </div>
             </div>
-        </div>
-        <div class="hero-image">
-            <div class="pizza-illustration">🍕</div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400&q=80" alt="Delicious Pizza">
+            </div>
         </div>
     </section>
 
@@ -53,154 +52,109 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-header">
-                <h2>About Our Charity Event</h2>
-                <p>Making a positive impact in our community through delicious pizza</p>
+                <h2>About Our Event</h2>
+                <p>Bringing communities together through great food and greater purpose</p>
             </div>
-            <div class="about-grid">
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Our Mission</h3>
-                    <p>Lions Club is dedicated to serving our community and helping those in need. This pizza event helps fund our local outreach programs, vision screenings, and youth development initiatives.</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Our annual charity pizza event is more than just a fundraiser—it's a celebration of community, generosity, and the joy of giving back. We partner with local pizzerias to create mouth-watering pizzas that will satisfy your cravings while supporting an incredible cause.</p>
+                    <p>All proceeds from this event go directly to Adventure Quest World Club, helping provide educational resources, adventure programs, and life-changing experiences for children who need them most.</p>
                 </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-pizza-slice"></i>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>of proceeds go to charity</p>
                     </div>
-                    <h3>Premium Quality</h3>
-                    <p>We serve only the finest quality pizza made with premium ingredients. Every slice is crafted with care and love, ensuring a delightful experience for all ages.</p>
-                </div>
-                <div class="about-card">
-                    <div class="card-icon">
-                        <i class="fas fa-hands-helping"></i>
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>children helped annually</p>
                     </div>
-                    <h3>Community Impact</h3>
-                    <p>100% of proceeds go directly to community programs including food drives, educational scholarships, and assistance for families in need. Your purchase makes a real difference!</p>
+                    <div class="stat-item">
+                        <h3>3rd</h3>
+                        <p>annual event</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pizza Menu Section -->
-    <section id="flavors" class="flavors">
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
         <div class="container">
             <div class="section-header">
-                <h2>Delicious Pizza Menu</h2>
-                <p>Choose from our selection of freshly made pizzas</p>
+                <h2>Our Pizza Menu</h2>
+                <p>Every pizza supports Adventure Quest World Club</p>
             </div>
-            <div class="flavors-grid">
-                <div class="flavor-card">
-                    <div class="flavor-image">🍕</div>
-                    <h3>Classic Margherita</h3>
-                    <p>Fresh tomato sauce, mozzarella, and basil</p>
-                    <div class="price">$12.00</div>
-                    <button class="btn btn-small" onclick="addToCart('margherita', 12.00)">Add to Cart</button>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Margherita Pizza">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Margherita Classic</h3>
+                        <p>Fresh mozzarella, tomato sauce, and basil</p>
+                        <div class="menu-price">$12.99</div>
+                        <button class="btn btn-small add-to-cart" data-name="Margherita Classic" data-price="12.99">Add to Cart</button>
+                    </div>
                 </div>
-                <div class="flavor-card">
-                    <div class="flavor-image">🍖</div>
-                    <h3>Pepperoni Supreme</h3>
-                    <p>Classic pepperoni with extra cheese</p>
-                    <div class="price">$14.00</div>
-                    <button class="btn btn-small" onclick="addToCart('pepperoni', 14.00)">Add to Cart</button>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1604382355076-af4b0eb60143?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Pepperoni Pizza">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Pepperoni Passion</h3>
+                        <p>Spicy pepperoni with extra cheese and tomato sauce</p>
+                        <div class="menu-price">$14.99</div>
+                        <button class="btn btn-small add-to-cart" data-name="Pepperoni Passion" data-price="14.99">Add to Cart</button>
+                    </div>
                 </div>
-                <div class="flavor-card">
-                    <div class="flavor-image">🧀</div>
-                    <h3>Four Cheese</h3>
-                    <p>Mozzarella, cheddar, parmesan, and blue cheese</p>
-                    <div class="price">$13.50</div>
-                    <button class="btn btn-small" onclick="addToCart('cheese', 13.50)">Add to Cart</button>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1601050697385-4ff1b92d7341?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="Vegetarian Pizza">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Garden Fresh Veggie</h3>
+                        <p>Bell peppers, mushrooms, onions, olives, and tomatoes</p>
+                        <div class="menu-price">$13.99</div>
+                        <button class="btn btn-small add-to-cart" data-name="Garden Fresh Veggie" data-price="13.99">Add to Cart</button>
+                    </div>
                 </div>
-                <div class="flavor-card">
-                    <div class="flavor-image">🥩</div>
-                    <h3>Meat Lovers</h3>
-                    <p>Pepperoni, sausage, ham, and bacon</p>
-                    <div class="price">$16.50</div>
-                    <button class="btn btn-small" onclick="addToCart('meat', 16.50)">Add to Cart</button>
-                </div>
-                <div class="flavor-card">
-                    <div class="flavor-image">🥬</div>
-                    <h3>Veggie Deluxe</h3>
-                    <p>Bell peppers, mushrooms, olives, and onions</p>
-                    <div class="price">$13.00</div>
-                    <button class="btn btn-small" onclick="addToCart('veggie', 13.00)">Add to Cart</button>
-                </div>
-                <div class="flavor-card">
-                    <div class="flavor-image">🌶️</div>
-                    <h3>Spicy Hawaiian</h3>
-                    <p>Ham, pineapple, jalapeños, and hot sauce</p>
-                    <div class="price">$15.00</div>
-                    <button class="btn btn-small" onclick="addToCart('hawaiian', 15.00)">Add to Cart</button>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=200&q=80" alt="BBQ Chicken Pizza">
+                    </div>
+                    <div class="menu-info">
+                        <h3>BBQ Chicken Delight</h3>
+                        <p>Grilled chicken, red onions, and tangy BBQ sauce</p>
+                        <div class="menu-price">$15.99</div>
+                        <button class="btn btn-small add-to-cart" data-name="BBQ Chicken Delight" data-price="15.99">Add to Cart</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Donation/Cart Section -->
-    <section id="donate" class="donate">
+    <!-- Cause Section -->
+    <section id="cause" class="cause">
         <div class="container">
-            <div class="section-header">
-                <h2>Your Order & Donation</h2>
-                <p>Every purchase supports our community programs</p>
-            </div>
-            <div class="donate-content">
-                <div class="cart-section">
-                    <h3>Your Cart</h3>
-                    <div id="cart-items" class="cart-items">
-                        <p class="empty-cart">Your cart is empty. Add some delicious pizza!</p>
-                    </div>
-                    <div class="cart-total">
-                        <strong>Total: $<span id="cart-total">0.00</span></strong>
-                    </div>
+            <div class="cause-content">
+                <div class="cause-image">
+                    <img src="https://images.unsplash.com/photo-1503740725288-04e7b1c79e15?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=400&q=80" alt="Adventure Quest World Club">
                 </div>
-                <div class="donation-section">
-                    <h3>Additional Donation</h3>
-                    <p>Want to contribute extra to our cause?</p>
-                    <div class="donation-options">
-                        <button class="donation-btn" onclick="addDonation(5)">+$5</button>
-                        <button class="donation-btn" onclick="addDonation(10)">+$10</button>
-                        <button class="donation-btn" onclick="addDonation(25)">+$25</button>
-                        <input type="number" id="custom-donation" placeholder="Custom amount" min="1" step="0.01">
-                        <button class="btn btn-small" onclick="addCustomDonation()">Add</button>
+                <div class="cause-text">
+                    <h2>Adventure Quest World Club</h2>
+                    <p>Adventure Quest World Club is a non-profit organization dedicated to providing educational adventures and life-changing experiences for children from underserved communities. Through outdoor activities, cultural exchanges, and educational programs, they help young people develop confidence, leadership skills, and a global perspective.</p>
+                    <p>Your support through this pizza fundraiser helps fund:</p>
+                    <ul class="cause-list">
+                        <li><i class="fas fa-check"></i> Adventure camps and outdoor education</li>
+                        <li><i class="fas fa-check"></i> Educational materials and resources</li>
+                        <li><i class="fas fa-check"></i> Transportation for field trips</li>
+                        <li><i class="fas fa-check"></i> Scholarships for children in need</li>
+                    </ul>
+                    <div class="impact">
+                        <h3>Make a Real Impact</h3>
+                        <p>Every pizza you order helps send a child on their first adventure!</p>
                     </div>
-                </div>
-                <div class="checkout-section">
-                    <button class="btn btn-primary btn-large" onclick="checkout()" id="checkout-btn" disabled>
-                        Proceed to Checkout
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Event Details -->
-    <section class="event-details">
-        <div class="container">
-            <div class="section-header">
-                <h2>Event Details</h2>
-                <p>Join us for this special community event</p>
-            </div>
-            <div class="event-info">
-                <div class="event-card">
-                    <div class="event-icon">
-                        <i class="fas fa-calendar"></i>
-                    </div>
-                    <h3>Date & Time</h3>
-                    <p>Saturday, October 14th, 2024<br>10:00 AM - 6:00 PM</p>
-                </div>
-                <div class="event-card">
-                    <div class="event-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Location</h3>
-                    <p>Lions Club Community Center<br>123 Main Street, Downtown</p>
-                </div>
-                <div class="event-card">
-                    <div class="event-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Special Activities</h3>
-                    <p>Face painting, games for kids,<br>live music, and more!</p>
                 </div>
             </div>
         </div>
@@ -210,21 +164,56 @@
     <section id="contact" class="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Contact Us</h2>
-                <p>Get in touch for more information</p>
+                <h2>Get Involved</h2>
+                <p>Contact us to order, volunteer, or learn more</p>
             </div>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>(555) 123-4567</span>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>123 Community Center Drive<br>Anytown, ST 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@pizzaforacause.org</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Event Hours</h4>
+                            <p>Saturday, October 15th<br>11:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>info@lionsclub.org</span>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-globe"></i>
-                    <span>www.lionsclub.org</span>
+                <div class="contact-form">
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Special requests or questions..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Place Order</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -234,30 +223,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Lions Club</h3>
-                    <p>Serving our community with pride and dedication since 1968.</p>
+                <div class="footer-logo">
+                    <i class="fas fa-pizza-slice"></i>
+                    <span>Pizza for a Cause</span>
                 </div>
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#flavors">Pizza</a></li>
-                        <li><a href="#donate">Donate</a></li>
-                    </ul>
+                <div class="footer-text">
+                    <p>&copy; 2025 Pizza for a Cause. All proceeds benefit Adventure Quest World Club. Non-profit organization.</p>
                 </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Lions Club. All rights reserved. | Making a difference in our community.</p>
             </div>
         </div>
     </footer>
